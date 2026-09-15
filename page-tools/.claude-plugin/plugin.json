@@ -1,0 +1,5 @@
+{
+  "name": "page-tools",
+  "description": "HTML 페이지의 title, 내부 링크, 이미지 alt, 모바일 viewport, UTF-8 인코딩을 점검하는 page-check 스킬을 담은 플러그인",
+  "version": "0.1.0"
+}
