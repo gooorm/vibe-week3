@@ -15,3 +15,7 @@ There are no build, lint, or test commands to document because no project has be
 
 - Claude Code와의 모든 대화는 한국어로 진행합니다.
 - 모든 git 커밋 메시지는 한국어로 작성합니다.
+
+## 디자인 규칙
+
+- 버튼: 배경색은 연보라 `#bb8cff`, 모서리는 `border-radius: 12px`로 둥글게 처리합니다.
