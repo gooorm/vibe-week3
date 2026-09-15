@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffe6f0 0%, #e6f0ff 50%, #e6fff5 100%);
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  }
+
+  .card {
+    background: #fff9fb;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(200, 170, 200, 0.35);
+    padding: 40px 36px;
+    width: 320px;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ffd6e8;
+    box-shadow: 0 4px 12px rgba(255, 182, 213, 0.5);
+  }
+
+  h1 {
+    margin: 20px 0 6px;
+    color: #7a5c7a;
+    font-size: 24px;
+  }
+
+  .intro {
+    color: #a98aa9;
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .likes {
+    text-align: left;
+    background: #fef0f5;
+    border-radius: 16px;
+    padding: 18px 24px;
+    list-style: none;
+  }
+
+  .likes li {
+    margin: 10px 0;
+    color: #6b5b6b;
+    font-size: 15px;
+  }
+
+  .likes li::before {
+    content: "🌸 ";
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="profile-img" src="https://placehold.co/280x280/ffe1ee/9b7a9b?text=%3A%29">
+    <h1>홍길동</h1>
+    <p class="intro">호기심 많고 새로운 걸 배우는 걸 좋아하는 사람입니다.</p>
+    <ul class="likes">
+      <li>파스텔톤 디자인</li>
+      <li>고양이</li>
+      <li>주말 카페 투어</li>
+    </ul>
+  </div>
+</body>
+</html>
