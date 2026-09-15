@@ -71,23 +71,42 @@
   }
 
   #add-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     border: none;
     border-radius: 12px;
-    padding: 0 18px;
-    background: #b8a9e0;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #cba6ff, #bb8cff 45%, #9d6dff);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
     color: #fff;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     cursor: pointer;
-    transition: background 0.15s ease, transform 0.1s ease;
+    box-shadow: 0 6px 16px rgba(187, 140, 255, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    transition: background-position 0.35s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  }
+
+  #add-btn .plus {
+    font-size: 1.1rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
   }
 
   #add-btn:hover {
-    background: #a390d6;
+    background-position: 100% 50%;
+    box-shadow: 0 10px 22px rgba(187, 140, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  #add-btn:hover .plus {
+    transform: rotate(90deg);
   }
 
   #add-btn:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
+    box-shadow: 0 4px 10px rgba(187, 140, 255, 0.45);
   }
 
   ul#expense-list {
@@ -178,7 +197,7 @@
     <div class="input-row">
       <input type="text" id="item-name" placeholder="항목명 (예: 커피)">
       <input type="number" id="item-amount" placeholder="금액">
-      <button id="add-btn">추가</button>
+      <button id="add-btn"><span class="plus">+</span> 추가</button>
     </div>
 
     <ul id="expense-list"></ul>
